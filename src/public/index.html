@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HyperCinema</title>
+    <meta name="description" content="Watch movies online for free without registration">
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+<header>
+    <h1 id="main-title">Hyper Cinema</h1>
+    <div id="login-button">Login</div>
+</header>
+
+<article class="film">
+    <section class="video-and-description">
+        <video controls="controls" poster="images/cloud-atlas.jpg" src="video/cloud-atlas-trailer.mp4"></video>
+        <section class="film__info">
+            <div class="film__info--header">
+                <h2 class="name">Cloud Atlas</h2>
+                <p class="rating">R</p>
+            </div>
+            <p class="sub-info">2012, Germany, 2h 52m</p>
+            <p class="description">
+                An exploration of how the actions of individual lives impact one another in the past,
+                present and future, as one soul is shaped from a killer into a hero,
+                and an act of kindness ripples across centuries to inspire a revolution.
+            </p>
+            <table>
+                <tr>
+                    <td class="table__key">Directors</td>
+                    <td>Tom Tykwer, Lana Wachowski, Lilly Wachowski</td>
+                </tr>
+                <tr>
+                    <td class="table__key">Genres</td>
+                    <td>Drama, Mystery, Sci-Fi</td>
+                </tr>
+                <tr>
+                    <td class="table__key">IMDB</td>
+                    <td>7.4</td>
+                </tr>
+                <tr>
+                    <td class="table__key">Rotten Tomatoes</td>
+                    <td>66%</td>
+                </tr>
+            </table>
+            <div class="film-info__buttons">
+                <button class="film-info__button film-info__button--trailer">Trailer</button>
+                <button class="film-info__button film-info__button--reviews" onclick="window.location.href='#reviews'">
+                    Reviews
+                </button>
+            </div>
+        </section>
+    </section>
+
+    <section class="actors">
+        <h3 class="section-header">Actors</h3>
+        <section id="actors-list" class="actors-list">
+            <article class="actor" tabindex="0">
+                <img class="actor__photo" src="images/actors/01-jim-sturgess.jpg" alt="Jim Sturgess">
+                <div class="actor__name">Jim Sturgess</div>
+            </article>
+            <article class="actor" tabindex="0">
+                <img class="actor__photo" src="images/actors/02-ben-whishaw.jpg" alt="Ben Whishaw">
+                <div class="actor__name">Ben Whishaw</div>
+            </article>
+            <article class="actor" tabindex="0">
+                <img class="actor__photo" src="images/actors/03-halle-berry.jpg" alt="Halle Berry">
+                <div class="actor__name">Halle Berry</div>
+            </article>
+            <article class="actor" tabindex="0">
+                <img class="actor__photo" src="images/actors/04-jim-broadbent.jpg" alt="Jim Broadbent">
+                <div class="actor__name">Jim Broadbent</div>
+            </article>
+            <article class="actor" tabindex="0">
+                <img class="actor__photo" src="images/actors/05-bae-doona.jpg" alt="Bae Doona">
+                <div class="actor__name">Bae Doona</div>
+            </article>
+            <article class="actor" tabindex="0">
+                <img class="actor__photo" src="images/actors/06-tom-hanks.jpg" alt="Tom Hanks">
+                <div class="actor__name">Tom Hanks</div>
+            </article>
+            <article class="actor" tabindex="0">
+                <img class="actor__photo" src="images/actors/07-hugh-grant.jpg" alt="Hugh Grant">
+                <div class="actor__name">Hugh Grant</div>
+            </article>
+            <!--            <article class="actor">-->
+            <!--                <img class="actor__photo" src="images/actors/08-hugo-weaving.jpg" alt="Hugo Weaving">-->
+            <!--                <div class="actor__name">Hugo Weaving</div>-->
+            <!--            </article>-->
+        </section>
+    </section>
+
+    <section id="reviews">
+        <h3 class="section-header">Reviews</h3>
+
+        <section class="reviews-wrapper">
+            <section class="reviews-list" id="reviews-list">
+                <article class="review">
+                    <div class="grade positive">10<span>/10</span></div>
+
+                    <span class="review__date date">8 October 2012</span>
+                    <h1 class="review__summary">A genre-breaking classic</h1>
+                    <p class="review__text">
+                        There can be little doubt that Cloud Atlas will become a classic
+                        that will be watched over and over again by its devoted followers,
+                        just like its predecessors by Stanley Kubrick and Ridley Scott.
+                        Despite the many questions I had in my mind when I left the theater
+                        and the moments during the film when I felt disappointed or confused,
+                        I knew this, and I have not stopped thinking about the movie
+                        and longing to be back in front of the screen.
+                        <br><br>
+                        It is easy to criticize this movie
+                        as some have done for being overly ambitious,
+                        pandering to low taste, being too simple or too complex,
+                        with too few actors or too many,
+                        or even for celebrating revenge violence against professional critics
+                        who write negative reviews.
+                        They may all be correct,
+                        but these critics will still put themselves in the same category
+                        as those that warned audiences against 2001 or Blade Runner.
+                        The truth is that Cloud Atlas is profound in its reach,
+                        its visual and acoustic impact,
+                        its mesmerizing flow and its completely ground-breaking storytelling,
+                        and movie goers will see it and feel it in their guts.
+                        <br><br>
+                        It is a movie that is a product of our age of internet-driven
+                        universal knowledge and vision,
+                        and the freedom we have to travel the world
+                        and jump between ages, genres, images and identities at our will.
+                        It reminds us that we are human
+                        and that we can still hear our heart beat, if we listen.
+                    </p>
+                </article>
+
+                <article class="review">
+                    <div class="grade negative">1<span>/10</span></div>
+
+                    <span class="review__date date">8 October 2012</span>
+                    <h1 class="review__summary">A Pretentious Cliché</h1>
+                    <p class="review__text">
+                        Now... forgive my hateful language
+                        but I am still recovering from the ridiculous boredom and anger
+                        that I experienced last night.
+                        I should start by saying
+                        that I spent the night trying to think of
+                        something good about this movie. I failed.
+                        <br><br>
+                        This was the most pretentious,
+                        most cliché film I have seen in a long long time.
+                        This idea with telling different stories serving a single purpose
+                        which would "form the big picture" is so overused.
+                        And it might have worked with some other films
+                        but in this case it's just "oh c'mon, seriously?!".
+                        The cast is awful. Don't get me wrong I usually like Tom Hanks
+                        and I loved Ben Whishaw in The Perfume,
+                        but the acting in Cloud Atlas is literally scandalous.
+                        Now about the movie itself.
+                        It is crystal clear what they tried to achieve.
+                        It should have been some sort of a revelation which would explain life itself.
+                        In reality it is simple, shallow and ridiculous.
+                        It doesn't raise questions or make you think. I
+                        t doesn't even try to show you the answers.
+                        It just tells you stuff with a dramatic slow preacher-like voice
+                        and wannabe interesting accents.
+                        Honestly this parody of a movie felt as if you caught
+                        a sub- sub-sub-cable 22h lame melodramatic TV show crew,
+                        you gave them a giant budget and a camera (and Halle Berry for publicity)
+                        and they took the opportunity to spill every single stupid,
+                        random and clichéd thought into a three hour nightmare.
+                    </p>
+                </article>
+
+                <article class="review">
+                    <div class="grade positive">8<span>/10</span></div>
+
+                    <span class="review__date date">9 September 2012</span>
+                    <h1 class="review__summary">A Powerful Spectacle</h1>
+                    <p class="review__text">
+                        I didn't find it to be a mess at all, and it was certainly
+                        the best thing the Wachowskis have ever done.
+                        I'm not sure how the directing duties were distributed,
+                        so I'll uniformly praise Tom Tykwer as well.
+                        <br><br>
+                        I haven't read the book, so I can't make any comparisons there,
+                        but I don't often leave a film adaptation wanting to read the novel afterwards,
+                        as I did after seeing this.
+                        <br><br>
+                        Visually stunning, epic in scope, a strong score;
+                        the sort of film that you're constantly amazed was ever made and happy it was.
+                        Equal parts comedy, romance, thriller, and dystopian speculative fiction,
+                        it really is an astounding mix of disparate elements.
+                        <br><br>
+                        The biggest overall failure was definitely some of the make-up effects
+                        - trying to turn Doona Bae into a believable red-headed Caucasian woman
+                        was simply distracting - but the overall art & sound design was incredible.
+                        <br><br>
+                        If I could turn channels while watching TV and switch between stories
+                        and narratives as seamlessly and as deftly as the editing in Cloud Atlas,
+                        it would honestly be hard to go back to simply watching one show at a time.
+                        <br><br>
+                        Truly a marvel of multitasking on so many levels. Great stuff.
+                    </p>
+                </article>
+            </section>
+
+            <div class="reviews-summary">
+                <div class="reviews-summary__border-left"></div>
+                <div class="reviews-summary__stats">
+                    <section>
+                        <p class="reviews-number">3<p>
+                        <p class="caption">total</p>
+                    </section>
+                    <section>
+                        <p class="reviews-number positive">2<span>66.7%</span><p>
+                        <p class="caption">positive</p>
+                    </section>
+                    <section>
+                        <p class="reviews-number negative">1<span>33.3%</span><p>
+                        <p class="caption">negative</p>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </section>
+</article>
+
+<script src="js/script.js"></script>
+</body>
+</html>
